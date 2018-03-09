@@ -14,10 +14,10 @@ public class ReadCSVFile {
             //bufReader.readLine();
             String[] dataByRow;
             while((rowData = bufReader.readLine()) != null){
-                dataByRow = rowData.split(",");
+                dataByRow = rowData.split(";");
 
                 for(String s: dataByRow){
-                    System.out.println(s + " - ");
+                    System.out.println(s);
                 }
             }
         } catch (Exception e)
