@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class main01 extends Application {
+public class main01 extends Application implements EventHandler<ActionEvent> {
 
     Button button;
 
@@ -20,6 +20,7 @@ public class main01 extends Application {
 
         button = new Button();
         button.setText("kattints rám!");
+        button.setOnAction(this);
 
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
@@ -28,4 +29,13 @@ public class main01 extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+
+    @Override
+    public void handle(ActionEvent event) {
+        if(event.getSource()==button){
+            System.out.println("Aahhh méég! Kattinccs jó erősen!");
+        }
+    }
+
+
 }
