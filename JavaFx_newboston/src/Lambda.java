@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class main01 extends Application{
+public class Lambda extends Application{
 
     Button button;
 
@@ -21,14 +21,14 @@ public class main01 extends Application{
         button = new Button();
         button.setText("kattints rám!");
 
-
-        button.setOnAction(e -> System.out.println("Ez most egy lambda"));
+        button.setOnAction(e -> {
+            System.out.println("Ez most egy lambda");
+            System.out.println("Lambada");
+        });
 
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
-
-        Scene scene = new Scene(layout, 1500, 900);
-
+        Scene scene = new Scene(layout, 800, 600);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
