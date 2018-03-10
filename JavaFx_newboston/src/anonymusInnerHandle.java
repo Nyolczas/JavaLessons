@@ -6,9 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-
-public class GombAction extends Application  implements EventHandler<ActionEvent> {
-
+public class anonymusInnerHandle extends Application {
     Button button;
 
     public static void main(String[] args) {
@@ -20,8 +18,15 @@ public class GombAction extends Application  implements EventHandler<ActionEvent
         primaryStage.setTitle("Ablak neve");
 
         button = new Button();
-        button.setText("kattints rám!");
-        button.setOnAction(this);
+        button.setText("Hej Nyuszi!");
+
+        // This class will handle the button events
+        button.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("AAHH! AAAHH! AAAAHHH!");
+            }
+        });
 
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
@@ -30,12 +35,4 @@ public class GombAction extends Application  implements EventHandler<ActionEvent
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
-    @Override
-    public void handle(ActionEvent event) {
-        if(event.getSource()==button){
-            System.out.println("Aahhh méég! Kattinccs jó erősen!");
-        }
-    }
 }
-
