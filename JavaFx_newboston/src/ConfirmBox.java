@@ -10,6 +10,8 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import java.awt.*;
+
 public class ConfirmBox {
 
     static boolean ansver;

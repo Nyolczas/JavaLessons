@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 public class main01 extends Application{
 
+    Stage window;
     Button button;
 
     public static void main(String[] args) {
@@ -16,7 +17,8 @@ public class main01 extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Ablak neve");
+        window = primaryStage;
+        window.setTitle("Ablak neve");
 
         button = new Button();
         button.setText("kattints rám!");
@@ -26,12 +28,9 @@ public class main01 extends Application{
 
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
-
         Scene scene = new Scene(layout, 1500, 900);
-
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        window.setScene(scene);
+        window.show();
     }
-
 
 }
