@@ -23,7 +23,12 @@ public class MultipleWindows extends Application{
 
         button = new Button("Kattincssá!");
 
-        button.setOnAction(e -> AlertBox.display("Ablakom Címe", "Ez itt egy csodálatos Alertbox Modal."));
+        //button.setOnAction(e -> AlertBox.display("Ablakom Címe", "Ez itt egy csodálatos Alertbox Modal."));
+
+        button.setOnAction(e -> {
+            boolean result = ConfirmBox.display("Ablak Címe", "Tényleg el akarod küldeni ezeket a pucér képeket?");
+            System.out.println(result);
+        });
 
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
