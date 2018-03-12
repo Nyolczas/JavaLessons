@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="782634be-8950-41f8-8e46-d7c5fef01b3c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/FX12_ChoiceBox.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/FX13_ListeningForSelectionChanges.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,16 +29,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FX12_ChoiceBox.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FX12_ChoiceBox.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FX12_ChoiceBox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+            <state relative-caret-position="782">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#486#487#0" expanded="true" />
                 <element signature="e#514#515#0" expanded="true" />
                 <element signature="e#765#773#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FX13_ListeningForSelectionChanges.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FX13_ListeningForSelectionChanges.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="37" column="169" lean-forward="false" selection-start-line="37" selection-start-column="169" selection-end-line="37" selection-end-column="169" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#784#792#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/ValidateInput.java" />
         <option value="$PROJECT_DIR$/src/JavaFXCheckbox.java" />
         <option value="$PROJECT_DIR$/src/FX12_ChoiceBox.java" />
+        <option value="$PROJECT_DIR$/src/FX13_ListeningForSelectionChanges.java" />
       </list>
     </option>
   </component>
@@ -166,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FX12_ChoiceBox">
+  <component name="RunManager" selected="Application.FX13_ListeningForSelectionChanges">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -202,9 +217,9 @@
       <module name="JavaFx_newboston" />
       <envs />
     </configuration>
-    <configuration name="GrdPn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="FX13_ListeningForSelectionChanges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="GrdPn" />
+      <option name="MAIN_CLASS_NAME" value="FX13_ListeningForSelectionChanges" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -319,19 +334,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.GrdPn" />
-      <item index="1" class="java.lang.String" itemvalue="Application.JavaFXCheckbox" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ValidateInput" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ClosingProgramProperly" />
-      <item index="4" class="java.lang.String" itemvalue="Application.FX12_ChoiceBox" />
+      <item index="0" class="java.lang.String" itemvalue="Application.JavaFXCheckbox" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ValidateInput" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ClosingProgramProperly" />
+      <item index="3" class="java.lang.String" itemvalue="Application.FX12_ChoiceBox" />
+      <item index="4" class="java.lang.String" itemvalue="Application.FX13_ListeningForSelectionChanges" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.FX12_ChoiceBox" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ClosingProgramProperly" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ValidateInput" />
-        <item index="3" class="java.lang.String" itemvalue="Application.JavaFXCheckbox" />
-        <item index="4" class="java.lang.String" itemvalue="Application.GrdPn" />
+        <item index="0" class="java.lang.String" itemvalue="Application.FX13_ListeningForSelectionChanges" />
+        <item index="1" class="java.lang.String" itemvalue="Application.FX12_ChoiceBox" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ClosingProgramProperly" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ValidateInput" />
+        <item index="4" class="java.lang.String" itemvalue="Application.JavaFXCheckbox" />
       </list>
     </recent_temporary>
   </component>
@@ -503,13 +518,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FX12_ChoiceBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+        <state relative-caret-position="782">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#486#487#0" expanded="true" />
             <element signature="e#514#515#0" expanded="true" />
             <element signature="e#765#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FX13_ListeningForSelectionChanges.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="37" column="169" lean-forward="false" selection-start-line="37" selection-start-column="169" selection-end-line="37" selection-end-column="169" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#784#792#0" expanded="true" />
           </folding>
         </state>
       </provider>
