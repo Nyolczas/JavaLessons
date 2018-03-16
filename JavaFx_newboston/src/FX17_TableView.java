@@ -29,6 +29,7 @@ public class FX17_TableView extends Application{
         vBox.getChildren().addAll();
 
         Scene scene = new Scene(vBox);
-
+        window.setScene(scene);
+        window.show();
     }
 }
