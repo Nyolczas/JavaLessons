@@ -18,6 +18,7 @@ public class FX20_Menu extends Application{
         window = primaryStage;
         window.setTitle("Menu demo");
 
+        // ===============================================================================================
         // File menu
         Menu fileMenu = new Menu("_File");
 
@@ -33,6 +34,7 @@ public class FX20_Menu extends Application{
         fileMenu.getItems().add(new SeparatorMenuItem());
         fileMenu.getItems().add(new MenuItem("Kilépés..."));
 
+        // ===============================================================================================
         // Instrumentumok menü
         Menu instrumentMenu = new Menu("_Instrumentumok");
         instrumentMenu.getItems().add(new MenuItem("Összes"));
@@ -59,10 +61,35 @@ public class FX20_Menu extends Application{
         USDMXN.setDisable(true);
         instrumentMenu.getItems().add(USDMXN);
 
+        // ===============================================================================================
+        // Beállítások menü
+        Menu beallMenu = new Menu("_Beállítások");
+
+        CheckMenuItem showLines = new CheckMenuItem("Mutassa a sor számozást");
+        showLines.setOnAction(e-> {
+            if(showLines.isSelected())
+                System.out.println("Most mutatja a sor számozást");
+            else
+                System.out.println("Most elrejti a sor számozását");
+        });
+
+        CheckMenuItem autoSave = new CheckMenuItem("Automatikus mentés");
+        autoSave.setOnAction(e-> {
+            if(autoSave.isSelected())
+                System.out.println("Automatikus mentés bekapcsolva");
+            else
+                System.out.println("Automatikus mentés kikapcsolva");
+        });
+        autoSave.setSelected(true);
+
+        beallMenu.getItems().addAll(showLines, autoSave);
+
+        // ===============================================================================================
         // Main menu bar
         MenuBar menuBar = new MenuBar();
-        menuBar.getMenus().addAll(fileMenu, instrumentMenu);
+        menuBar.getMenus().addAll(fileMenu, instrumentMenu, beallMenu);
 
+        // ===============================================================================================
         layout = new BorderPane();
         layout.setTop(menuBar);
 
