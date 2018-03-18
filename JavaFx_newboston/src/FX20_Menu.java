@@ -49,7 +49,15 @@ public class FX20_Menu extends Application{
         instrumentMenu.getItems().add(new MenuItem("GBPJPY"));
         instrumentMenu.getItems().add(new MenuItem("GOLD"));
         instrumentMenu.getItems().add(new MenuItem("USDCHF"));
-        instrumentMenu.getItems().add(new MenuItem("USDJPY"));
+
+        MenuItem USDJPY = new MenuItem("USDJPY");
+        USDJPY.setOnAction(e -> System.out.println("Betölti az USDJPY Scenét"));
+        instrumentMenu.getItems().add(USDJPY);
+
+        MenuItem USDMXN = new MenuItem("USDMXN");
+        USDMXN.setOnAction(e -> System.out.println("Betölti az USDMXN Scenét"));
+        USDMXN.setDisable(true);
+        instrumentMenu.getItems().add(USDMXN);
 
         // Main menu bar
         MenuBar menuBar = new MenuBar();
