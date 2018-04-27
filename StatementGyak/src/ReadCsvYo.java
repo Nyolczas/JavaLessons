@@ -10,7 +10,11 @@ public class ReadCsvYo {
             List<String> lines = Files.readAllLines(Paths.get("AUDUSD_M5_Zoom.csv"));
 
             for (String line : lines) {
-                System.out.println(line);
+                String[] result = line.split(";");
+                for(String s : result) {
+                    System.out.print(s + " ### ");
+                }
+                System.out.println();
             }
 
         } catch (Exception e) {
