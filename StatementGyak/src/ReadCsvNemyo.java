@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ReadCsv {
+public class ReadCsvNemyo {
 
     public static void main(String[] args) throws FileNotFoundException {
         // .csv file
@@ -12,7 +12,8 @@ public class ReadCsv {
         try (Scanner scanner = inputStream = new Scanner(file)) {
             while (inputStream.hasNext()){
                 String data = inputStream.next();
-                System.out.println(data);
+                String[] values = data.split(";");
+                System.out.println(values[0]);
             }
             inputStream.close();
         }
